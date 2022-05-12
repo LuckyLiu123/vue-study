@@ -4,7 +4,7 @@ let Vue;
 
 class VueRouter {
     constructor(options){
-        console.log(Vue)
+        // console.log(Vue)
         this.$options = options
 
         //保存当前的hash到curent
