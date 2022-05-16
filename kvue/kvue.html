@@ -1,14 +1,17 @@
 <div id="app">
     <p>{{ counter }}</p>
+    <p k-text="counter"></p>
+    <p k-html="desc"></p>
 </div>
 <script src="./kvue.js"></script>
 <script>
     //1. 数据驱动：数据响应式
     //2. 编译：得到渲染函数
-    const app = new Vue({
+    const app = new KVue({
         el: '#app',
         data: {
-            counter: 1
+            counter: 1,
+            desc: '<span style="color: red">Hello Vue.js</span>'
         }
     })
     setInterval(() => {
